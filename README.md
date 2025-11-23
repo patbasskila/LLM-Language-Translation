@@ -57,43 +57,31 @@ The goal is to recreate the architecture at a low level—attention, masking, de
 pip install torch datasets transformers sacrebleu tqdm sentencepiece
 
 🗂 Data & Tokenization
-
 Data loaded automatically via Hugging Face datasets
-
 Tokenization via SentencePiece model: Helsinki-NLP/opus-mt-en-es
-
 BOS/EOS added explicitly
-
 Padding/truncation controlled by max_len
-
 Train/validation splits handled in data.py
-
 No manual dataset download required.
 
 🏋️ Training
-
 python main.py --mode train \
   --epochs 5 \
   --batch_size 64 \
   --max_len 96
 
 Saves checkpoints (last + best)
-
 Tracks validation BLEU
-
 Supports resume training:
-
 python main.py --mode train --resume
 
 🧪 Evaluation
-
 python main.py --mode eval \
   --checkpoint checkpoints/best.pt
 
 Outputs BLEU and validation loss.
 
 🌐 Translate a Sentence
-
 python main.py --mode translate \
   --checkpoint checkpoints/best.pt \
   --text "This is a small example sentence."
