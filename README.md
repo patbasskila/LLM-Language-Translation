@@ -39,7 +39,7 @@ The goal is to recreate the architecture at a low level—attention, masking, de
 
 ## 📁 Project Structure
 
-.
+```
 ├── data.py # Dataset + tokenizer + dataloader helpers
 ├── transformer.py # Full Transformer architecture
 ├── train.py # Training + validation + BLEU evaluation
@@ -47,5 +47,5 @@ The goal is to recreate the architecture at a low level—attention, masking, de
 ├── main.py # CLI for train/eval/translate
 ├── sanity_check.py # Checks for masks, shapes, etc.
 └── Translation_Transformer.ipynb # Notebook tutorial
-
+```
 
