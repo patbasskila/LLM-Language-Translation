@@ -94,16 +94,17 @@ ES: Esta es una oración de ejemplo pequeña.
 📓 Notebook
 
 Translation_Transformer.ipynb includes:
-Architecture explanation
-Training examples
-Visualization of attention and decoding
-Sample translations
+     Architecture explanation
+     Training examples
+     Visualization of attention and decoding
+     Sample translations
 
 🛠 Future Improvements
-Length penalty for beam search
-Tokenizer training from scratch
-Larger model variants (BERT-style embeddings or learned PE)
-TensorBoard or W&B logging
-Multi-GPU training
+
+     Length penalty for beam search
+     Tokenizer training from scratch
+     Larger model variants (BERT-style embeddings or learned PE)
+     TensorBoard or W&B logging
+     Multi-GPU training
 ```
 
