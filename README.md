@@ -86,7 +86,7 @@ python main.py --mode translate \
   --checkpoint checkpoints/best.pt \
   --text "This is a small example sentence."
 ```
-
+```
 Example:
 EN: This is a small example sentence.
 ES: Esta es una oración de ejemplo pequeña.
@@ -114,5 +114,5 @@ Larger model variants (BERT-style embeddings or learned PE)
 TensorBoard or W&B logging
 
 Multi-GPU training
-
+```
 
