@@ -71,12 +71,12 @@ Train/validation splits handled in data.py
 No manual dataset download required.
 
 🏋️ Training
-```
+
 python main.py --mode train \
   --epochs 5 \
   --batch_size 64 \
   --max_len 96
-```
+
 Saves checkpoints (last + best)
 
 Tracks validation BLEU
@@ -86,14 +86,14 @@ Supports resume training:
 python main.py --mode train --resume
 
 🧪 Evaluation
-```
+
 python main.py --mode eval \
   --checkpoint checkpoints/best.pt
-```
+
 Outputs BLEU and validation loss.
 
 🌐 Translate a Sentence
-```
+
 python main.py --mode translate \
   --checkpoint checkpoints/best.pt \
   --text "This is a small example sentence."
